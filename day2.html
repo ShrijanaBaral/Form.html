@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color:goldenrod;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            margin-top: 10px;
+            padding: 10px 0;
+        }
+        nav img {
+            height: 100px;
+            width: auto;
+            margin-right: 20px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .container-box {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(151, 43, 43, 0.1);
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+        }
+        .form-container {
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+        }
+        .submit {
+            flex: 1;
+            text-align: center;
+        }
+        form {
+            background-color:goldenrod;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 30px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0.2px;
+            position: fixed;
+            bottom: 1px;
+            width: 100%;
+        }
+        .image-container {
+            position: relative;
+        }
+        .image-container img {
+            width: 100%;
+        }
+        .text-block {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: transparent;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .center {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background-color: transparent;
+    color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: justify;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to FleetPanda</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showContent('home')">Home</a>
+        <a href="#" onclick="showContent('about')">About</a>
+        <a href="#" onclick="showContent('Contact Us')">Contact</a>
+    </nav>
+    <br><br>
+    <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1597953601374-1ff2d5640c85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="FleetPanda Logo">
+        <div class="text-block">
+            <h1>FleetPanda</h1>
+            <p>Journey with FleetPanda</p>
+        </div>
+        <div class="center">
+            <p>Our goal is to give fuel distributors a modern tech stack to better manage their operations and scale business growth in the digital era.
+                These are some of the most common reasons why fuel distributors have moved to FleetPanda:
+                You’re managing operations on paper, spreadsheets without any tech stack in place  and now want to get rid of the tedious paperwork, manual time-consuming processes, reduce instances of costly errors in operations and basically digitize your operations and make business more efficient
+                You’ve a tech stack of disparate systems that don’t play well together  so your operations processes are disconnected and you’re spending hours juggling between systems to manage operations, and now want to move to a unified platform that can bring your entire operations to a single platform and can integrate with all your existing systems
+                You’re paying millions of dollars to legacy softwares, but still end up with broken operations and are probably stuck with half-done implementations. You now want a modern software that’s easy to use, quick to implement, and can adapt to your evolving business needs.
+                You’re managing multiple business lines – and need a single platform that can bring together operations across all business lines on a single platform giving you better control and visibility.
+                You already have an accounting system in place and need a dispatch software that integrates with your accounting system, ensuring streamlined billing and invoicing processes for faster, accurate invoicing.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box-container">
+            <div class="container-box">
+                <h2>Platform</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Reconciliation & Invoicing</li>
+                    <li>Order Management</li>
+                    <li>Driver App</li>
+                </ul>
+            </div>
+            <div class="container-box">
+                <h2>Resources</h2>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Implementation and Support</li>
+                    <li>Ebook</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="container-box">
+                <h2>Pricing</h2>
+                <p>With FleetPanda’s custom pricing, you pay for what you need and use, not a cent more.</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>Contact Us</h2>
+        </div>
+        <br> 
+        <div class="FORM">
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div>
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 FleetPanda. All rights reserved.</p>
+    </footer>
+</body>
+</html>
